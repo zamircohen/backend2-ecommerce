@@ -10,7 +10,7 @@ function App() {
     Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati
     excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea
     iste laborum vero?`,
-    image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+    image: "/images/product-1-thumb.jpg"
   }, {
     name: "New product",
     sku: "DEF-456",
@@ -19,7 +19,7 @@ function App() {
     Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati
     excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea
     iste laborum vero?`,
-    image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+    image: "/images/product-2-thumb.jpg"
   }, {
     name: "Discounted product",
     sku: "GHI-789",
@@ -29,7 +29,7 @@ function App() {
     Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati
     excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea
     iste laborum vero?`,
-    image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+    image: "/images/product-3-thumb.jpg"
   }, {
     name: "Cheap product",
     sku: "JKL-012",
@@ -38,7 +38,7 @@ function App() {
     Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati
     excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea
     iste laborum vero?`,
-    image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+    image: "/images/product-4-thumb.jpg"
   }, {
     name: "Another discounted product",
     sku: "MNO-345",
@@ -48,7 +48,7 @@ function App() {
     Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati
     excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea
     iste laborum vero?`,
-    image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+    image: "/images/product-5-thumb.jpg"
   }, {
     name: "Super Fancy product",
     sku: "PQR-678",
