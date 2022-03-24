@@ -11291,3 +11291,9 @@ textarea.form-control-lg {
     color: var(--bs-body-color);
     text-decoration: none;
 }
+
+.footer-link, .footer-link:hover {
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, 0.5) !important;
+    text-decoration: none;
+}

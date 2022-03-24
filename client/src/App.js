@@ -48,7 +48,14 @@ function App() {
           <Route path="/products/:sku" element={<ProductPage />} />
         </Routes>
         <footer className="py-5 bg-dark">
-            <div className="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+            <div className="container">
+                <p class="m-0 text-center text-white">
+                    Copyright &copy; Your Website 2021
+                </p>
+                <p class="m-0 text-center text-white">
+                    Images by <a className="footer-link" href="https://unsplash.com/@usama_1248">Usama Akram</a>
+                </p>
+            </div>
         </footer>
     </>
   );
