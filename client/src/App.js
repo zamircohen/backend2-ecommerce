@@ -1,3 +1,5 @@
+import { Routes, Route, Link } from 'react-router-dom';
+
 import './App.css';
 import ProductList from './components/ProductList';
 
@@ -9,7 +11,9 @@ const NavBar = () => (
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li className="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li className="nav-item">
+                        <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+                    </li>
                     <li className="nav-item"><a class="nav-link" href="#!">About</a></li>
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
@@ -38,7 +42,9 @@ function App() {
   return (
     <>
         <NavBar />
-        <ProductList />
+        <Routes>
+          <Route path="/" element={<ProductList />} />
+        </Routes>
         <footer className="py-5 bg-dark">
             <div className="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
         </footer>
