@@ -1,13 +1,19 @@
-const Product = ({name, price, discountPrice, image}) => (
+import { Link } from 'react-router-dom';
+
+const Product = ({name, price, discountPrice, sku, thumbnail}) => (
     <div className="col mb-5">
         <div className="card h-100">
             {discountPrice &&
               <div className="badge bg-dark text-white position-absolute" style={{top: "0.5rem", right: "0.5rem"}}>Sale</div>
             }
-            <img className="card-img-top" src={image} alt={name} />
+            <Link to={`/products/${sku}`}>
+                <img className="card-img-top" src={thumbnail} alt={name} />
+            </Link>
             <div className="card-body p-4">
                 <div className="text-center">
-                    <h5 className="fw-bolder">{name}</h5>
+                    <Link to={`/products/${sku}`} className="product-link">
+                        <h5 className="fw-bolder">{name}</h5>
+                    </Link>
                     {discountPrice
                       ? <><span className="text-muted text-decoration-line-through">{price}</span> {discountPrice}</>
                       : price

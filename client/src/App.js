@@ -1,7 +1,8 @@
 import { Routes, Route, Link } from 'react-router-dom';
 
 import './App.css';
-import ProductList from './components/ProductList';
+import ProductList from './components/ProductList.js';
+import ProductPage from './components/ProductPage.js';
 
 
 const NavBar = () => (
@@ -44,6 +45,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<ProductList />} />
+          <Route path="/products/:sku" element={<ProductPage />} />
         </Routes>
         <footer className="py-5 bg-dark">
             <div className="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
