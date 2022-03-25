@@ -1,11 +1,11 @@
 const express = require("express");
 
-const app = express()
-const PORT = 3000;
+const {productRoutes} = require("./controllers/products");
 
-app.get("/", (req, res) => {
-  res.send("Hello world!");
-});
+const app = express()
+const PORT = 5000;
+
+app.use("/products", productRoutes);
 
 app.listen(PORT, () => {
   console.log(`Started Express server on port ${PORT}`);
