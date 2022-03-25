@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 
 import PRODUCTS from '../products';
 
-const ProductPage = () => {
+const Product = () => {
   let params = useParams();
   const product = PRODUCTS.find(({ sku }) => sku === params.sku);
   const { sku, name, description, image, price, discountPrice } = product;
@@ -41,4 +41,4 @@ const ProductPage = () => {
 );
 };
 
-export default ProductPage;
+export default Product;

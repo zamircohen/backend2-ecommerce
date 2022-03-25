@@ -1,7 +1,7 @@
-import Product from './Product.js';
+import ProductListItem from '../components/ProductListItem.js';
 import PRODUCTS from '../products.js';
 
-const ProductList = () => (
+const Home = () => (
   <>
     <header className="bg-dark py-5">
         <div className="container px-4 px-lg-5 my-5">
@@ -14,11 +14,11 @@ const ProductList = () => (
     <section className="py-5">
         <div className="container px-4 px-lg-5 mt-5">
             <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            { PRODUCTS.map(product => <Product key={product.sku} {...product} />) }
+            { PRODUCTS.map(product => <ProductListItem key={product.sku} {...product} />) }
             </div>
         </div>
     </section>
   </>
 );
 
-export default ProductList;
+export default Home;
