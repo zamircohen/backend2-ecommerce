@@ -85,4 +85,6 @@ const PRODUCTS = [{
 
 const getAllProducts = () => PRODUCTS;
 
-module.exports = {getAllProducts};
+const getProduct = (sku) => PRODUCTS.find(product => product.sku === sku);
+
+module.exports = {getAllProducts, getProduct};
