@@ -4,12 +4,13 @@ const {getAllProducts, getProduct} = require("../models/products");
 
 const productRoutes = express.Router();
 
-productRoutes.get("/", (_req, res) => {
-  res.json({products: getAllProducts()});
+productRoutes.get("/", async (_req, res) => {
+  const products = await getAllProducts();
+  res.json({products});
 });
 
-productRoutes.get("/:sku", (req, res) => {
-  const product = getProduct(req.params.sku);
+productRoutes.get("/:sku", async (req, res) => {
+  const product = await getProduct(req.params.sku);
   if (product) {
     res.json(product);
   } else {
